@@ -1,7 +1,7 @@
-FROM circleci/nomad:0.5.6-3
+FROM circleci/nomad:0.5.2
 
 RUN apt-get update \
-    && apt-get install -y sudo apt-transport-https software-properties-common ca-certificates
+    && apt-get install -y sudo apt-transport-https software-properties-common ca-certificates netcat
 
 # ENV DOCKER_SHA256=05ceec7fd937e1416e5dce12b0b6e1c655907d349d52574319a1e875077ccb79
 
